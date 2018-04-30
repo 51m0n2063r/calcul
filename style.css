@@ -1,0 +1,21 @@
+<form method="POST" name="op">
+<table border="0" cellpadding="3" cellspacing="0" width="100%">
+  <tr>
+    <td width="55%" valign="top">Indiquez 2 chiffres  :<br>
+      <input type="text" name="chiffre1" size="10">
+      <input type="text" name="chiffre2" size="10">
+      <p>Résultat :<br>
+      <input type="text" name="resultat" size="20">
+    </td>
+      <td width="45%" valign="top">Opération :<br>
+      <select size="4" onChange="document.op.resultat.value =
+                                 operation(document.op.chiffre1.value, document.op.chiffre2.value, this.selectedIndex)">
+        <option>addition</option>
+        <option>soustraction</option>
+        <option>multiplication</option>
+        <option>division</option>
+      </select>
+    </td>
+  </tr>
+</table>
+</form>
